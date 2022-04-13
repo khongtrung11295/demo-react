@@ -1,9 +1,15 @@
 import State from './pages/State';
 
 function App() {
+
+  const handleClickItem = (item) => {
+    console.log('cha', item);
+  }
+
+
   return (
     <>
-      <State/>
+      <State handleClickItem ={handleClickItem}/>
     </>
   );
 }
